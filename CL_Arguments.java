@@ -8,5 +8,6 @@ class CL_Arguments{
         System.out.println("Difference: " + (num1-num2));
         System.out.println("Product: " + (num1*num2));
         System.out.println("Quotient: " + (num1/num2));
+        System.out.println("Remainder: " + (num1%num2));
     }
 }
