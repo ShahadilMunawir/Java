@@ -12,8 +12,8 @@ class Volume{
     }
 
     public static void main(String[] args){
-        System.out.println("Volume of Cube: " + find_area(10));
-        System.out.println("Volume of Rectangular Box: " + find_area(10, 20, 30));
-        System.out.println("Volume of Cylinder: " + find_area(15, 10));
+        System.out.println("Volume of Cube: " + find_volume(10));
+        System.out.println("Volume of Rectangular Box: " + find_volume(10, 20, 30));
+        System.out.println("Volume of Cylinder: " + find_volume(15, 10));
     }
 }
