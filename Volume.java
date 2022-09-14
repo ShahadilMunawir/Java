@@ -1,13 +1,13 @@
 class Volume{
-    static int find_area(int area){
+    static int find_volume(int area){
         return area*area*area;
     }
 
-    static int find_area(int length, int width, int height){
+    static int find_volume(int length, int width, int height){
         return length*width*height;
     }
 
-    static double find_area(double radius, double height){
+    static double find_volume(double radius, double height){
         return Math.PI*radius*radius*height;
     }
 
