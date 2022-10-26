@@ -1,21 +1,38 @@
 // Program 14
 
-class Volume{
-    static int find_volume(int area){
+import java.util.Scanner;
+
+class Volume{    
+    static int find_area(int area){
         return area*area*area;
     }
 
-    static int find_volume(int length, int width, int height){
+    static int find_area(int length, int width, int height){
         return length*width*height;
     }
 
-    static double find_volume(double radius, double height){
+    static double find_area(double radius, double height){
         return Math.PI*radius*radius*height;
     }
 
     public static void main(String[] args){
-        System.out.println("Volume of Cube: " + find_volume(10));
-        System.out.println("Volume of Rectangular Box: " + find_volume(10, 20, 30));
-        System.out.println("Volume of Cylinder: " + find_volume(15, 10));
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter area of cube: ");
+        int cubeArea = input.nextInt();
+        System.out.print("Enter length of rectangular box: ");
+        int lengthBox = input.nextInt();
+        System.out.print("Enter width of rectangular box: ");
+        int widthBox = input.nextInt();
+        System.out.print("Enter height of rectangular box: ");
+        int heightBox = input.nextInt();
+        System.out.print("Enter radius of cylinder: ");
+        int radiusCylinder = input.nextInt();
+        System.out.print("Enter height of cylinder: ");
+        int heightCylinder = input.nextInt();
+        System.out.println("Volume of Cube: " + find_area(cubeArea));
+        System.out.println("Volume of Rectangular Box: " + find_area(lengthBox, widthBox, heightBox));
+        System.out.println("Volume of Cylinder: " + find_area(radiusCylinder, heightCylinder));
+        input.close();
     }
 }
