@@ -13,7 +13,7 @@ class Matrix{
         System.out.print("No of Columns: ");
         int columns = input.nextInt();
         int originalArray[][] = new int[rows][columns];
-        int transposeArray[][] = new int[rows][columns];
+        int transposeArray[][] = new int[columns][rows];
 
         System.out.println("Enter the elements of the matrix:- ");
         for(i=0; i<rows; i++){
@@ -42,8 +42,8 @@ class Matrix{
         }
 
         System.out.println("Transpose of Matrix:-");
-        for(i=0; i<rows; i++){
-            for(j=0; j<columns; j++){
+        for(i=0; i<columns; i++){
+            for(j=0; j<rows; j++){
                 System.out.print(transposeArray[i][j] + " ");
             }
             System.out.println("");
